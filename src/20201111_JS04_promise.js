@@ -31,7 +31,6 @@ timeOut(0).then(function(n)) {
   console.log('end')
 }
 */
-
 timeOut(0)
   .then((n) => {
     return timeOut(n);
