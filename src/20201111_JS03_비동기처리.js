@@ -63,6 +63,7 @@ for (let i; i < 10; i++) {
 }
 console.log("end");
 */
+console.log("start");
 
 function timeOut(n, callback_function) {
   setTimeout(function () {
@@ -75,5 +76,11 @@ function timeOut(n, callback_function) {
 }
 
 timeOut(0, (n) => {
-  console.log("end");
+  timeOut(n, (n) => {
+    timeOut(n, (n) => {
+      timeOut(n, (n) => {
+        console.log("end");
+      });
+    });
+  });
 });
