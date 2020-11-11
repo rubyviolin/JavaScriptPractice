@@ -7,7 +7,7 @@ function timeOut(ms) {
 
 async function process() {
   console.log("start");
-  await timeOut(2000); //awit는 async내에 사용가능. setTimeout과 직접 붙지 못 해서, 함수를 따로 만듦.
+  await timeOut(2000); //await는 async내에 사용가능. setTimeout과 직접 붙지 못 해서, 함수를 따로 만듦.
   console.log("end");
 }
 
